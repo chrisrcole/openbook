@@ -199,7 +199,7 @@ export const Nav = () => {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static" color="inherit" elevation={1}>
+      <AppBar color="inherit" elevation={1}>
         <Toolbar>
           <IconButton edge="start" color="primary">
             <FacebookIcon />
