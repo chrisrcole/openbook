@@ -1,2 +1,3 @@
 # openbook
- Facebook Clone using React, Redux, Typescript, and MongoDB
+
+Facebook Clone using React, Redux, Javascript, and MongoDB
