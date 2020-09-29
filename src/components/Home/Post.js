@@ -16,6 +16,9 @@ import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
+import profilePic from "../../assets/images/portrait.jpg";
+import food from "../../assets/images/food.jpg";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -51,9 +54,11 @@ export default function Post() {
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
+          <Avatar
+            aria-label="recipe"
+            className={classes.avatar}
+            src={profilePic}
+          ></Avatar>
         }
         action={
           <IconButton aria-label="settings">
@@ -63,11 +68,7 @@ export default function Post() {
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
       />
-      <CardMedia
-        className={classes.media}
-        image="/static/images/cards/paella.jpg"
-        title="Paella dish"
-      />
+      <CardMedia className={classes.media} image={food} title="Paella dish" />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           This impressive paella is a perfect party dish and a fun meal to cook

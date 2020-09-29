@@ -7,6 +7,8 @@ import Avatar from "@material-ui/core/Avatar";
 import TextField from "@material-ui/core/TextField";
 import { red } from "@material-ui/core/colors";
 
+import profilePic from "../../assets/images/portrait.jpg";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -37,9 +39,11 @@ export default function CreatePost() {
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
+          <Avatar
+            aria-label="recipe"
+            className={classes.avatar}
+            src={profilePic}
+          ></Avatar>
         }
         title="New Post"
         subheader={new Date().toLocaleDateString()}
