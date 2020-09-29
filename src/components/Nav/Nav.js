@@ -6,6 +6,8 @@ import IconButton from "@material-ui/core/IconButton";
 import InputBase from "@material-ui/core/InputBase";
 import Fab from "@material-ui/core/Fab";
 import Badge from "@material-ui/core/Badge";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import Button from "@material-ui/core/Button";
@@ -17,6 +19,10 @@ import MoreIcon from "@material-ui/icons/MoreVert";
 import AddIcon from "@material-ui/icons/Add";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import Avatar from "@material-ui/core/Avatar";
+import HomeIcon from "@material-ui/icons/Home";
+import OndemandVideoIcon from "@material-ui/icons/OndemandVideo";
+import StorefrontIcon from "@material-ui/icons/Storefront";
+import GroupWorkIcon from "@material-ui/icons/GroupWork";
 
 import profilePic from "../../assets/images/portrait.jpg";
 
@@ -90,12 +96,24 @@ const useStyles = makeStyles((theme) => ({
     bottom: theme.spacing(2),
     right: theme.spacing(2),
   },
+  tabs: {
+    float: "none",
+    position: "absolute",
+    top: "65%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+  },
 }));
 
 export const Nav = () => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const [value, setValue] = React.useState(0);
+
+  const handleTabChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -200,8 +218,23 @@ export const Nav = () => {
               inputProps={{ "aria-label": "search" }}
             />
           </div>
+
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+            <div className={classes.tabs}>
+              <Tabs
+                value={value}
+                onChange={handleTabChange}
+                indicatorColor="primary"
+                textColor="primary"
+                centered
+              >
+                <Tab icon={<HomeIcon />} />
+                <Tab icon={<OndemandVideoIcon />} />
+                <Tab icon={<StorefrontIcon />} />
+                <Tab icon={<GroupWorkIcon />} />
+              </Tabs>
+            </div>
             <Button
               size="small"
               startIcon={<Avatar src={profilePic} />}
