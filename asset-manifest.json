@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/openbook/static/js/main.f0ed85c6.chunk.js",
+    "main.js.map": "/openbook/static/js/main.f0ed85c6.chunk.js.map",
+    "runtime-main.js": "/openbook/static/js/runtime-main.93c7d5bb.js",
+    "runtime-main.js.map": "/openbook/static/js/runtime-main.93c7d5bb.js.map",
+    "static/js/2.a6943dbb.chunk.js": "/openbook/static/js/2.a6943dbb.chunk.js",
+    "static/js/2.a6943dbb.chunk.js.map": "/openbook/static/js/2.a6943dbb.chunk.js.map",
+    "index.html": "/openbook/index.html",
+    "precache-manifest.8cb88f935520a9511aa3b0f8424a101c.js": "/openbook/precache-manifest.8cb88f935520a9511aa3b0f8424a101c.js",
+    "service-worker.js": "/openbook/service-worker.js",
+    "static/js/2.a6943dbb.chunk.js.LICENSE.txt": "/openbook/static/js/2.a6943dbb.chunk.js.LICENSE.txt",
+    "static/media/food.jpg": "/openbook/static/media/food.da4382b1.jpg",
+    "static/media/portrait.jpg": "/openbook/static/media/portrait.87b537e7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93c7d5bb.js",
+    "static/js/2.a6943dbb.chunk.js",
+    "static/js/main.f0ed85c6.chunk.js"
+  ]
+}
